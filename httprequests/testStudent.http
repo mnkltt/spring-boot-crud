@@ -1,0 +1,30 @@
+GET http://localhost:8080/student
+
+
+###
+GET http://localhost:8080/student/name?name=N
+
+###
+GET http://localhost:8080/student/2
+
+###
+POST http://localhost:8080/student
+Content-Type: application/json
+
+{
+"name": "Postolt 1 User",
+"email": "user@test.hu"
+}
+
+###
+PUT http://localhost:8080/student/6
+Content-Type: application/json
+
+{
+"name": "Postolt 1 Updated",
+"email": "user@test.hu"
+}
+
+###
+DELETE http://localhost:8080/student/7
+
